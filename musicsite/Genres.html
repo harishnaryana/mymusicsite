@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta >
+    <title>Genres</title>
+    <link href="content/bootstrap.min.css" rel="stylesheet" />
+    <link href="site.css" rel="stylesheet" />
+    <link href="pdsa-sidebar.css" rel="stylesheet" />
+    <link href="pdsa-summary-block.css" rel="stylesheet" />
+    <link href="pdsa-readme-box.css" rel="stylesheet" />
+    <style>
+        .pdsa-readme-box{
+            min-height: 24em;
+        }
+
+        .checkbox .btn,
+        .checkbox-inline .btn{
+            padding-left: 2em;
+            min-width: 7em;
+        }
+
+        .checkbox-inline{
+            margin-left: -1.5em;
+        }
+
+        .checkbox label,
+        .checkbox-inline label{
+            text-align: left;
+        }
+    </style>
+</head>
+<body class="notransition">
+<div class="container">
+    <div class="row">
+        <header>
+            <a href="index.html">My Tunes</a>
+        </header>
+    </div>
+    <nav id="sideNavParent" class="pdsa-sn-wrapper">
+        <ul>
+            <li class="pdsa-sn-brand">
+                <a href="index.html" class="visible-sm visible-md visible-lg">Music</a>
+            </li>
+            <li>
+                <a href="index.html">
+                    <span class="visible-sm visible-md visible-lg">Home</span>
+                    <i class="glyphicon glyphicon-home visible-xs"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#"
+                   data-toggle="collapse"
+                   data-target="#ulGenres">
+                    <span class="visible-sm visible-md visible-lg">Genres&nbsp;<b class="caret"></b></span>
+                    <i class="glyphicon glyphicon-globe visible-xs"></i>
+                </a>
+                <ul id="ulGenres" class="collapse" data-parent="#sideNavParent">
+                    <li>
+                        <a href="Genres.html">All Genres</a>
+                    </li>
+                    <li>
+                        <a href="#">Jazz</a>
+                    </li>
+                    <li>
+                        <a href="#">Country</a>
+                    </li>
+                    <li>
+                        <a href="#">Rock</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#"
+                   data-toggle="collapse"
+                   data-target="#ulPlaylists">
+                    <span class="visible-sm visible-md visible-lg">Playlists&nbsp;<b class="caret"></b></span>
+                    <i class="glyphicon glyphicon-list-alt visible-xs"></i>
+                </a>
+                <ul id="ulPlaylists" class="collapse" data-parent="#sideNavParent">
+                    <li>
+                        <a href="playlists.html">All Playlists</a>
+                    </li>
+                    <li>
+                        <a href="#">My Top Rated</a>
+                    </li>
+                    <li>
+                        <a href="#">Top Country</a>
+                    </li>
+                    <li>
+                        <a href="#">Top Classic Rock</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="songs.html">
+                    <span class="visible-sm visible-md visible-lg">Songs</span>
+                    <i class="glyphicon glyphicon-music visible-xs"></i>
+                </a>
+            </li>
+
+            <li>
+                <a href="download.html">
+                    <span class="visible-sm visible-md visible-lg">Downloads</span>
+                    <i class="glyphicon glyphicon-download visible-xs"></i>
+                </a>
+
+            </li>
+
+        </ul>
+    </nav>
+
+</div>
+
+<div class="container body-content">
+    <div class="row">
+        <div class=" text-center col-xs-12 ">
+            <h3>Display the following genres...</h3>
+            <div class="well well-sm">
+               <div class="btn-group" data-toggle="buttons">
+                 <label class="btn btn-default ">
+                     <span class="glyphicon glyphicon-unchecked"></span>
+                    <input type="checkbox" checked="checked" /> Jazz
+                 </label>
+
+                   <label class="btn btn-default">
+                       <span class="glyphicon glyphicon-unchecked"></span>
+                      <input type="checkbox" /> Country
+                   </label>
+
+                    <label class="btn btn-default">
+                        <span class="glyphicon glyphicon-unchecked"></span>
+                       <input type="checkbox" /> Rock
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4">
+
+
+            <div class="pdsa-readme-box pdsa-readme-box-primary">
+                <div class="readme-header">
+                    <i class="glyphicon glyphicon-music "></i>
+                </div>
+                <div class="readme-body">
+                    <h1>Jazz</h1>
+                    <p>Jazz is a genre of music that originated in African American communities in the United States in the late 19th and early 20th century. It emerged in the form of independent popular musical styles, all linked by the common bonds of African American and European American musical parentage with a performance orientation. </p>
+
+                </div>
+                <div class="readme-footer">
+                    <a href="Jazz.html">+ See all Jazz Songs</a>
+
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <div class="pdsa-readme-box pdsa-readme-box-success">
+                <div class="readme-header">
+                    <i class="glyphicon glyphicon-music "></i>
+                </div>
+                <div class="readme-body">
+                    <h1>Country</h1>
+                    <p>Country music is a genre of American popular music that originated in Southern United States, in Bristol, Tennessee in the 1920s. It takes its roots from the southeastern genre of American folk music and Western music. Blues modes have been used extensively throughout its recorded history. </p>
+
+                </div>
+                <div class="readme-footer">
+                    <a href="Country.html">+ See all Country Songs</a>
+
+
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12 col-sm-4">
+            <div class="pdsa-readme-box pdsa-readme-box-info">
+                <div class="readme-header">
+                    <i class="glyphicon glyphicon-music "></i>
+                </div>
+                <div class="readme-body">
+                    <h1>Rock</h1>
+                    <p>Rock music is a genre of popular music that originated as "rock and roll" in the United States in the 1950s, and developed into a range of different styles in the 1960s and later, particularly in the United Kingdom and the United States. It has its roots in 1940s' and 1950s' rock and roll, itself heavily influenced by blues, rhythm and blues and country music.</p>
+
+                </div>
+                <div class="readme-footer">
+                    <a href="Rock.html">+ See all Rock Songs</a>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="col-xs-12 col-sm-4">
+
+        </div>
+    </div>
+</div>
+
+
+
+<script src="script/jquery-1.11.3.min.js"></script>
+<script src="script/bootstrap.min.js"></script>
+<script src="pdsa-common.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("[type='checkbox']").on('change',function(){
+            if($(this).prop('checked')){
+                $(this).prev()
+                        .removeClass('glyphicon-unchecked')
+                        .addClass('glyphicon-ok-circle');
+            }
+            else
+            {
+                $(this).prev()
+                        .removeClass('glyphicon-ok-circle')
+                        .addClass('glyphicon-unchecked');
+            }
+    });
+
+        $("input:checked").prev()
+                .removeClass('glyphicon-unchecked')
+                .addClass('glyphicon-ok-circle');
+        $("input:checked").parent()
+                .addClass('active')
+    });
+</script>
+</body>
+</html>
